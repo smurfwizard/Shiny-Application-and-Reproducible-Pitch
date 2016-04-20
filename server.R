@@ -49,6 +49,6 @@ shinyServer(function(input, output, session) {
   
       convamt <- reactive({convertanswer(datasetInputAmount(),datasetInputConvert(),datasetInputConvertTo())})
 
-      output$answer <- reactive({paste(input$e0, input$e1," is converted into ",convamt(),input$e2, sep=" ")})
+      output$answer <- reactive({paste(input$e0, input$e1," converts to ",convamt(),input$e2, sep=" ")})
 
 })
